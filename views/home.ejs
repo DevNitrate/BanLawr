@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban Lawr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Should we ban lawr from the server ?</h1>
+
+    <div class="btns">
+        <form action="/vote" method="post">
+            <button class="yes" type="submit">Yes</button>
+            <button class="no" type="submit">No</button>
+        </form>
+    </div>
+
+    <div class="votes">
+        <div class="yn" id="yes">
+            <h1 class="yn">Yes</h1>
+            <h1 class="vote"><%= yes %></h1>
+        </div>
+
+        <div class="yn" id="no">
+            <h1 class="yn">No</h1>
+            <h1 class="vote">0</h1>
+        </div>
+    </div>
+</body>
+</html>
